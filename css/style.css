@@ -65,6 +65,19 @@ section{
     background:var(--yellow);
 }
 
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    padding: 0 .5rem;
+    color: #333;
+}
+
+.heading span{
+    color: var(--yellow);
+}
+
+
 header{
     position: fixed;
     top: 0; left: 0;
@@ -197,13 +210,39 @@ header #menu-bar{
 }
 
 .about .content p{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #666;
     padding: 1rem 0;
 }
 
+.menu .list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    border-top: .3rem dashed rgba(0,0,0,.2);
+    border-bottom: .3rem dashed rgba(0,0,0,.2);
+}
 
+.menu .list .btn{
+    margin: 1rem;
+}
 
+.menu .list .btn.active,   
+.menu .list .btn:hover{
+    background: var(--yellow);
+    color: #fff;
+}
+
+.menu .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 
 
@@ -294,6 +333,4 @@ header #menu-bar{
     html{
         font-size: 45%;
     }
-
-   
 }
